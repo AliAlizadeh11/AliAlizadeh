@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/AliAlizadeh/static/css/main.6669fc85.css",
+    "main.js": "/AliAlizadeh/static/js/main.d77ad1ce.js",
+    "static/js/453.be84ec25.chunk.js": "/AliAlizadeh/static/js/453.be84ec25.chunk.js",
+    "static/media/Ali-photo.jpeg": "/AliAlizadeh/static/media/Ali-photo.35d887bbda4ba1642b20.jpeg",
+    "static/media/AliAlizadeh-CV.pdf": "/AliAlizadeh/static/media/AliAlizadeh-CV.d482710fa8862b02edef.pdf",
+    "index.html": "/AliAlizadeh/index.html",
+    "main.6669fc85.css.map": "/AliAlizadeh/static/css/main.6669fc85.css.map",
+    "main.d77ad1ce.js.map": "/AliAlizadeh/static/js/main.d77ad1ce.js.map",
+    "453.be84ec25.chunk.js.map": "/AliAlizadeh/static/js/453.be84ec25.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6669fc85.css",
+    "static/js/main.d77ad1ce.js"
+  ]
+}
