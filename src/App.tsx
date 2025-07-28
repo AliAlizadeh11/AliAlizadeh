@@ -113,7 +113,7 @@ const AboutMe: React.FC = () => {
             <p className="dark:text-gray-300 text-gray-700 leading-relaxed mb-4">
 
             Hello!
-            I'm Ali Alizadeh, a passionate <strong>Computer Engineer Student</strong>. I'm currently focused on the exciting intersection of <strong>machine learning and biology</strong>, applying computational power to biological challenges. My journey in computer engineering began with a fascination for how technology could unravel complex systems, leading me to explore its vast potential. I love exploring new technologies and solving challenging problems.
+            I'm Ali Alizadeh, a passionate <strong>Computer Engineering Student</strong>. I'm currently focused on the exciting intersection of <strong>machine learning and biology</strong>, applying computational power to biological challenges. My journey in computer engineering began with a fascination for how technology could unravel complex systems, leading me to explore its vast potential. I love exploring new technologies and solving challenging problems.
 
             </p>
 
