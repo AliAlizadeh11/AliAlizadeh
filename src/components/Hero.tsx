@@ -5,7 +5,7 @@ import profilePic from '../assets/Ali-photo.jpeg';
 const Hero: React.FC = () => {
     return (
         <section className="w-full max-w-6xl flex flex-col md:flex-row items-center justify-between py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-transparent mb-10">
-            <div className="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+            <div className="w-full md:w-1/2 text-center md:text-left mb-8 md:mb-0 md:pr-8 lg:pr-12">
                 <p className="text-lg sm:text-xl dark:text-gray-400 text-gray-600 mb-2">Hi, my name is</p>
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold dark:text-white text-gray-900 mb-4">Ali Alizadeh</h1>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold dark:text-gray-300 text-gray-700 mb-6 md:mb-8">Computer Engineering Student</h2>
@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
             </div>
             <div className="w-full md:w-1/2 flex justify-center md:justify-end">
                 {/* Image source now imports from the assets folder */}
-                <img src={profilePic} alt="Ali Alizadeh Profile" className="rounded-xl shadow-lg w-full max-w-xs sm:max-w-sm md:max-w-md" />
+                <img src={profilePic} alt="Ali Alizadeh Profile" className="rounded-xl shadow-lg w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 object-cover" />
             </div>
         </section>
     );
