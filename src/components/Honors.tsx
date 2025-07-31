@@ -7,7 +7,7 @@ const honors = [
     highlight: '17.37/20',
     subtitle: 'School of Computer Science, IUST',
     details: 'Class of 110 students',
-    color: 'from-gray-200 to-gray-300',
+    color: 'from-gray-100 to-gray-50',
     highlightColor: 'text-gray-700 dark:text-gray-300',
   },
   {
@@ -16,7 +16,7 @@ const honors = [
     highlight: 'Rank 175 / 127,000',
     subtitle: 'Mathematics and Physics majors',
     details: 'National Ranking',
-    color: 'from-gray-200 to-gray-300',
+    color: 'from-gray-100 to-gray-50',
     highlightColor: 'text-gray-700 dark:text-gray-300',
   },
 ];

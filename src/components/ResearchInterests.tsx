@@ -52,7 +52,7 @@ const ResearchInterests: React.FC = () => {
 
     const getColorClasses = (color: string) => {
         const colorMap = {
-            gray: "from-gray-500 to-gray-600 dark:from-gray-600 dark:to-gray-700 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-200"
+            gray: "from-gray-100 to-gray-50 dark:from-gray-800/50 dark:to-gray-700/50 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-200"
         };
         return colorMap[color as keyof typeof colorMap] || colorMap.gray;
     };
@@ -110,10 +110,10 @@ const ResearchInterests: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {researchTopics.map((topic) => (
                     <div key={topic.id} className="group relative h-full">
-                        <div className="bg-white dark:bg-gray-800 rounded-xl p-6 border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full flex flex-col min-h-[260px]">
+                        <div className={`bg-gradient-to-br ${getColorClasses(topic.color)} rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full flex flex-col min-h-[260px]`}>
                             {/* Header */}
                             <div className="flex items-start gap-3 mb-4">
-                                <div className={`text-2xl bg-gradient-to-r ${getColorClasses(topic.color)} bg-clip-text text-transparent`}>
+                                <div className="text-2xl">
                                     {topic.icon}
                                 </div>
                                 <h4 className="font-bold dark:text-white text-gray-800 text-lg">
