@@ -4,29 +4,59 @@ const projects = [
     {
         icon: '🌐',
         title: 'NoCodi.ir',
-        category: 'Web Development',
-        technologies: ['React.js', 'Django'],
-        description: 'Implemented the Website using Scrum methodology with integrated CI/CD pipelines.',
-        link: 'http://nocodi.ir/',
+        category: 'Software Engineering Course Project',
+        technologies: ['React.js', 'Django', 'Material-UI','PostgreSQL'],
+        description: '• Developed responsive website using React.js and Django REST Framework\n• Built frontend with Redux state management and Material-UI components\n• Implemented RESTful API with JWT authentication and role-based access control\n• Integrated PostgreSQL database for data persistence',
+        link: 'https://github.com/your-username/nocodi-project',
         linkText: 'View Project',
         color: 'from-gray-100 to-gray-50 dark:from-gray-800/50 dark:to-gray-700/50',
     },
     {
         icon: '📱',
-        title: 'Seven apply',
-        category: 'Web Application',
-        technologies: ['React.js', 'Django'],
-        description: 'Developed using Scrum methodology.',
+        title: 'Seven Apply',
+        category: 'System Analysis and Design Course Project',
+        technologies: ['React.js', 'Django', 'Tailwind Css'],
+        description: '• Built full-stack website with React.js frontend and Django backend\n• Developed component-based architecture with REST API integration\n• Implemented database schema design and user authentication modules\n• Created dynamic data rendering through API endpoints',
         link: 'https://github.com/Team-Se7en',
         linkText: 'View Project',
         color: 'from-gray-100 to-gray-50 dark:from-gray-800/50 dark:to-gray-700/50',
     },
     {
+        icon: '🔧',
+        title: 'Domain-Specific Language for Clustering',
+        category: 'Compiler Design Project',
+        technologies: ['ANTLR', 'DSL', 'Clustering Algorithms', 'AST'],
+        description: '• Designed and implemented DSL to simplify clustering workflows using ANTLR\n• Supported multiple clustering algorithms (K-Means, DBSCAN, Spectral, Agglomerative)\n• Built custom grammar and listener to parse DSL commands\n• Generated Abstract Syntax Tree (AST) for command processing',
+        link: 'https://github.com/your-username/clustering-dsl',
+        linkText: 'View Project',
+        color: 'from-gray-100 to-gray-50 dark:from-gray-800/50 dark:to-gray-700/50',
+    },
+    {
+        icon: '📈',
+        title: 'Volatility Modeling for Crypto Asset Allocation',
+        category: 'Algorithmic Trading Course Project',
+        technologies: ['Black-Litterman', 'Portfolio Optimization'],
+        description: '• Estimated crypto asset volatility using GARCH, EGARCH, and FIGARCH models\n• Applied statistical estimators for volatility forecasting\n• Optimized portfolio weights using Black-Litterman model\n• Maximized Sharpe ratio for improved risk-adjusted returns',
+        link: 'https://github.com/your-username/crypto-volatility',
+        linkText: 'View Project',
+        color: 'from-gray-100 to-gray-50 dark:from-gray-800/50 dark:to-gray-700/50',
+    },
+    {
+        icon: '🤖',
+        title: 'Naïve Bayes Text Classification',
+        category: 'Artificial Intelligence Course Project',
+        technologies: ['Naïve Bayes', 'Text Preprocessing', 'Feature Extraction', 'Machine Learning'],
+        description: '• Built complete text classification pipeline using Naïve Bayes algorithm\n• Performed text preprocessing (tokenization, normalization)\n• Implemented feature extraction and model training\n• Evaluated performance on labeled datasets and generated predictions',
+        link: 'https://github.com/your-username/naive-bayes-classifier',
+        linkText: 'View Project',
+        color: 'from-gray-100 to-gray-50 dark:from-gray-800/50 dark:to-gray-700/50',
+    },
+    {
         icon: '⚙️',
-        title: 'XV6 System Call',
-        category: 'Operating Systems',
-        technologies: ['C'],
-        description: 'Add threading support to XV6 using C',
+        title: 'XV6 System Call and OS Kernel Development',
+        category: 'Operating Systems Course Project',
+        technologies: ['C', 'x86 Assembly', 'Process Management', 'Threading'],
+        description: '• Developed Unix-like educational OS kernel using C and x86 Assembly\n• Implemented process management: creation, scheduling, and termination\n• Extended XV6 by adding threading support in C\n• Built system calls for kernel-level operations',
         link: 'https://github.com/SajadMRjl/OS-Project',
         linkText: 'View Project',
         color: 'from-gray-100 to-gray-50 dark:from-gray-800/50 dark:to-gray-700/50',
@@ -54,9 +84,11 @@ const Projects: React.FC = () => {
                             </div>
                         </div>
                         
-                        <p className="dark:text-gray-300 text-gray-700 leading-relaxed mb-4 text-sm flex-1">
-                            {project.description}
-                        </p>
+                        <div className="dark:text-gray-300 text-gray-700 leading-relaxed mb-4 text-sm flex-1">
+                            {project.description.split('\n').map((line, i) => (
+                                <p key={i} className="mb-1">{line}</p>
+                            ))}
+                        </div>
                         
                         <div className="flex flex-wrap gap-2 mb-4">
                             {project.technologies.map((tech, i) => (
