@@ -4,7 +4,7 @@ const skillCategories = [
     {
         icon: '🤖',
         title: 'AI & Machine Learning',
-        color: 'from-blue-100 to-blue-50 dark:from-blue-900/30 dark:to-blue-800/30',
+        color: 'from-gray-100 to-gray-50 dark:from-gray-800/50 dark:to-gray-700/50',
         skills: [
             {
                 category: 'Frameworks/Libraries',
@@ -19,7 +19,7 @@ const skillCategories = [
     {
         icon: '💻',
         title: 'Web Development & Programming',
-        color: 'from-green-100 to-green-50 dark:from-green-900/30 dark:to-green-800/30',
+        color: 'from-gray-100 to-gray-50 dark:from-gray-800/50 dark:to-gray-700/50',
         skills: [
             {
                 category: 'Languages',
@@ -42,7 +42,7 @@ const skillCategories = [
     {
         icon: '⚙️',
         title: 'DevOps, Tools & Professional',
-        color: 'from-purple-100 to-purple-50 dark:from-purple-900/30 dark:to-purple-800/30',
+        color: 'from-gray-100 to-gray-50 dark:from-gray-800/50 dark:to-gray-700/50',
         skills: [
             {
                 category: 'Tools & Platforms',
@@ -74,7 +74,7 @@ const Skills: React.FC = () => {
                             {category.skills.map((skillGroup, groupIdx) => (
                                 <div key={groupIdx}>
                                     <h4 className="text-lg font-semibold dark:text-white text-gray-800 mb-3 flex items-center">
-                                        <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                                        <span className="w-2 h-2 bg-gray-500 rounded-full mr-2"></span>
                                         {skillGroup.category}
                                     </h4>
                                     <div className="flex flex-wrap gap-2">

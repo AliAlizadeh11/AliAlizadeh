@@ -9,7 +9,7 @@ const projects = [
         description: 'Implemented the Website using Scrum methodology with integrated CI/CD pipelines.',
         link: 'http://nocodi.ir/',
         linkText: 'View Project',
-        color: 'from-blue-100 to-blue-50 dark:from-blue-900/30 dark:to-blue-800/30',
+        color: 'from-gray-100 to-gray-50 dark:from-gray-800/50 dark:to-gray-700/50',
     },
     {
         icon: '📱',
@@ -19,7 +19,7 @@ const projects = [
         description: 'Developed using Scrum methodology.',
         link: 'https://github.com/Team-Se7en',
         linkText: 'View Project',
-        color: 'from-green-100 to-green-50 dark:from-green-900/30 dark:to-green-800/30',
+        color: 'from-gray-100 to-gray-50 dark:from-gray-800/50 dark:to-gray-700/50',
     },
     {
         icon: '⚙️',
@@ -29,7 +29,7 @@ const projects = [
         description: 'Add threading support to XV6 using C',
         link: 'https://github.com/SajadMRjl/OS-Project',
         linkText: 'View Project',
-        color: 'from-purple-100 to-purple-50 dark:from-purple-900/30 dark:to-purple-800/30',
+        color: 'from-gray-100 to-gray-50 dark:from-gray-800/50 dark:to-gray-700/50',
     },
 ];
 
@@ -42,7 +42,7 @@ const Projects: React.FC = () => {
                 {projects.map((project, idx) => (
                     <div
                         key={idx}
-                        className={`bg-gradient-to-br ${project.color} rounded-xl p-6 border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg transition-all duration-200 hover:scale-105`}
+                        className={`bg-gradient-to-br ${project.color} rounded-xl p-6 border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg transition-all duration-200 hover:scale-105 flex flex-col h-full`}
                     >
                         <div className="flex items-center mb-4">
                             <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 mr-3">
@@ -54,7 +54,7 @@ const Projects: React.FC = () => {
                             </div>
                         </div>
                         
-                        <p className="dark:text-gray-300 text-gray-700 leading-relaxed mb-4 text-sm">
+                        <p className="dark:text-gray-300 text-gray-700 leading-relaxed mb-4 text-sm flex-1">
                             {project.description}
                         </p>
                         
@@ -69,17 +69,19 @@ const Projects: React.FC = () => {
                             ))}
                         </div>
                         
-                        <a
-                            href={project.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center px-4 py-2 text-sm font-medium rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-600 dark:to-purple-700 text-white hover:from-blue-600 hover:to-purple-700 dark:hover:from-blue-700 dark:hover:to-purple-800 transition-all duration-200 hover:shadow-md"
-                        >
-                            {project.linkText}
-                            <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                            </svg>
-                        </a>
+                        <div className="mt-auto">
+                            <a
+                                href={project.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center px-4 py-2 text-sm font-medium rounded-lg bg-gradient-to-r from-gray-600 to-gray-700 dark:from-gray-700 dark:to-gray-800 text-white hover:from-gray-700 hover:to-gray-800 dark:hover:from-gray-800 dark:hover:to-gray-900 transition-all duration-200 hover:shadow-md w-full justify-center"
+                            >
+                                {project.linkText}
+                                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 ))}
             </div>

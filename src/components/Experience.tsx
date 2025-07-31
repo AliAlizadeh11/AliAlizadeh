@@ -14,7 +14,7 @@ const experiences = [
       'Used frameworks: PyTorch, PyTorch Geometric, Keras, TensorFlow, Scikit-learn, Pandas',
     ],
     tech: ['PyTorch', 'PyG', 'Keras', 'TensorFlow', 'Scikit-learn', 'Pandas'],
-    color: 'from-blue-100 to-blue-50 dark:from-blue-900/30 dark:to-blue-800/30',
+    color: 'from-gray-100 to-gray-50 dark:from-gray-800/50 dark:to-gray-700/50',
   },
   {
     icon: '💻',
@@ -27,7 +27,7 @@ const experiences = [
       'Worked with C# and .NET Framework',
     ],
     tech: ['C#', '.NET Framework'],
-    color: 'from-green-100 to-green-50 dark:from-green-900/30 dark:to-green-800/30',
+    color: 'from-gray-100 to-gray-50 dark:from-gray-800/50 dark:to-gray-700/50',
   },
 ];
 
@@ -48,7 +48,7 @@ const Experience: React.FC = () => {
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
                 <div className="flex flex-col gap-1">
                   <span className="font-bold text-lg dark:text-white text-gray-800">{exp.role}</span>
-                  <span className="text-blue-600 dark:text-blue-400 font-semibold">{exp.org}</span>
+                  <span className="text-gray-700 dark:text-gray-300 font-semibold">{exp.org}</span>
                 </div>
                 <div className="text-sm text-gray-500 dark:text-gray-400 mt-1 sm:mt-0">
                   {exp.date} | {exp.location}

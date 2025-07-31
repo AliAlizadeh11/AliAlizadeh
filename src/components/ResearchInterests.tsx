@@ -11,55 +11,50 @@ const ResearchInterests: React.FC = () => {
             icon: "🤖",
             title: "Machine Learning for Biology",
             description: "Applying ML algorithms to uncover patterns and insights from complex biological data.",
-            color: "blue"
+            color: "gray"
         },
         {
             id: "software-eng",
             icon: "🧬",
             title: "Computational Biology",
             description: "Developing software and models to simulate and understand biological systems.",
-            color: "green"
+            color: "gray"
         },
         {
             id: "cybersecurity",
             icon: "🔬",
             title: "Bioinformatics",
             description: "Designing computational tools to manage, analyze, and interpret genomic and molecular data.",
-            color: "purple"
+            color: "gray"
         },
         {
             id: "data-science",
             icon: "💊",
             title: "Drug Discovery",
             description: "Leveraging data-driven methods to identify potential therapeutic compounds and predict drug interactions.",
-            color: "pink"
+            color: "gray"
         },
         {
             id: "rna-protein",
             icon: "🧪",
             title: "RNA & Protein Structure Prediction",
             description: "Exploring algorithms to model the 3D structure of RNA and proteins for functional analysis.",
-            color: "orange"
+            color: "gray"
         },
         {
             id: "healthcare-ai",
             icon: "🏥",
             title: "Deep Learning in Healthcare",
             description: "Utilizing deep neural networks to improve diagnostics, treatment planning, and patient outcomes.",
-            color: "red"
+            color: "gray"
         },
     ];
 
     const getColorClasses = (color: string) => {
         const colorMap = {
-            blue: "from-blue-500 to-blue-600 dark:from-blue-600 dark:to-blue-700 border-blue-200 dark:border-blue-800 text-blue-800 dark:text-blue-300",
-            green: "from-green-500 to-green-600 dark:from-green-600 dark:to-green-700 border-green-200 dark:border-green-800 text-green-800 dark:text-green-300",
-            purple: "from-purple-500 to-purple-600 dark:from-purple-600 dark:to-purple-700 border-purple-200 dark:border-purple-800 text-purple-800 dark:text-purple-300",
-            pink: "from-pink-500 to-pink-600 dark:from-pink-600 dark:to-pink-700 border-pink-200 dark:border-pink-800 text-pink-800 dark:text-pink-300",
-            orange: "from-orange-500 to-orange-600 dark:from-orange-600 dark:to-orange-700 border-orange-200 dark:border-orange-800 text-orange-800 dark:text-orange-300",
-            red: "from-red-500 to-red-600 dark:from-red-600 dark:to-red-700 border-red-200 dark:border-red-800 text-red-800 dark:text-red-300"
+            gray: "from-gray-500 to-gray-600 dark:from-gray-600 dark:to-gray-700 border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-200"
         };
-        return colorMap[color as keyof typeof colorMap] || colorMap.blue;
+        return colorMap[color as keyof typeof colorMap] || colorMap.gray;
     };
 
     const expandInterest = async (interestText: string, interestId: string) => {
@@ -105,7 +100,7 @@ const ResearchInterests: React.FC = () => {
             {/* Introduction */}
             <div className="mb-8">
                 <p className="text-lg dark:text-gray-300 text-gray-700 leading-relaxed mb-4">
-                    My research focuses on the intersection of <strong className="text-blue-600 dark:text-blue-400">computer science</strong> and <strong className="text-green-600 dark:text-green-400">biology</strong>, 
+                    My research focuses on the intersection of <strong className="text-gray-800 dark:text-gray-200">computer science</strong> and <strong className="text-gray-800 dark:text-gray-200">biology</strong>, 
                     where I develop computational methods to solve complex biological problems.
                 </p>
 

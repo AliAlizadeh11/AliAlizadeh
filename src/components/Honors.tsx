@@ -7,8 +7,8 @@ const honors = [
     highlight: '17.37/20',
     subtitle: 'School of Computer Science, IUST',
     details: 'Class of 110 students',
-    color: 'from-green-400 to-blue-400',
-    highlightColor: 'text-green-600 dark:text-green-400',
+    color: 'from-gray-200 to-gray-300',
+    highlightColor: 'text-gray-700 dark:text-gray-300',
   },
   {
     icon: '🎓',
@@ -16,8 +16,8 @@ const honors = [
     highlight: 'Rank 175 / 127,000',
     subtitle: 'Mathematics and Physics majors',
     details: 'National Ranking',
-    color: 'from-purple-400 to-pink-400',
-    highlightColor: 'text-purple-600 dark:text-purple-400',
+    color: 'from-gray-200 to-gray-300',
+    highlightColor: 'text-gray-700 dark:text-gray-300',
   },
 ];
 
@@ -29,7 +29,7 @@ const Honors: React.FC = () => {
         {honors.map((honor, idx) => (
           <div
             key={idx}
-            className={`flex flex-col h-full bg-gradient-to-br ${honor.color} dark:from-gray-900/40 dark:to-gray-800/40 rounded-xl p-6 border border-gray-200 dark:border-gray-700 shadow-md`}
+            className={`flex flex-col h-full bg-gradient-to-br ${honor.color} dark:from-gray-800/50 dark:to-gray-700/50 rounded-xl p-6 border border-gray-200 dark:border-gray-700 shadow-md`}
           >
             <div className="flex items-center gap-4 mb-4">
               <span className="text-3xl">{honor.icon}</span>

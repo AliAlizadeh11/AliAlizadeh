@@ -27,9 +27,9 @@ const Navbar: React.FC = () => {
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex space-x-6">
                     <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }} className="text-lg font-medium hover:text-blue-400 transition duration-300 ease-in-out dark:text-gray-200 text-gray-700 cursor-pointer">About Me</a>
-                    <a href="#experience" onClick={(e) => { e.preventDefault(); scrollToSection('experience'); }} className="text-lg font-medium hover:text-blue-400 transition duration-300 ease-in-out dark:text-gray-200 text-gray-700 cursor-pointer">Experience</a>
                     <a href="#education" onClick={(e) => { e.preventDefault(); scrollToSection('education'); }} className="text-lg font-medium hover:text-blue-400 transition duration-300 ease-in-out dark:text-gray-200 text-gray-700 cursor-pointer">Education</a>
                     <a href="#research-interests" onClick={(e) => { e.preventDefault(); scrollToSection('research-interests'); }} className="text-lg font-medium hover:text-blue-400 transition duration-300 ease-in-out dark:text-gray-200 text-gray-700 cursor-pointer">Research Interests</a>
+                    <a href="#experience" onClick={(e) => { e.preventDefault(); scrollToSection('experience'); }} className="text-lg font-medium hover:text-blue-400 transition duration-300 ease-in-out dark:text-gray-200 text-gray-700 cursor-pointer">Experience</a>
                     <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} className="text-lg font-medium hover:text-blue-400 transition duration-300 ease-in-out dark:text-gray-200 text-gray-700 cursor-pointer">Contact</a>
                     <button id="theme-toggle" onClick={toggleTheme} className="text-lg font-medium hover:text-blue-400 transition duration-300 ease-in-out dark:text-gray-200 text-gray-700">
                         <i className={`fas ${theme === 'dark' ? 'fa-moon' : 'fa-sun'}`}></i>
@@ -55,9 +55,9 @@ const Navbar: React.FC = () => {
                 <div className="md:hidden bg-white dark:bg-black border-t border-gray-200 dark:border-gray-700">
                     <nav className="flex flex-col space-y-4 py-4 px-4 sm:px-6 lg:px-8">
                         <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); setIsMenuOpen(false); }} className="text-lg font-medium hover:text-blue-400 transition duration-300 ease-in-out dark:text-gray-200 text-gray-700 cursor-pointer">About Me</a>
-                        <a href="#experience" onClick={(e) => { e.preventDefault(); scrollToSection('experience'); setIsMenuOpen(false); }} className="text-lg font-medium hover:text-blue-400 transition duration-300 ease-in-out dark:text-gray-200 text-gray-700 cursor-pointer">Experience</a>
                         <a href="#education" onClick={(e) => { e.preventDefault(); scrollToSection('education'); setIsMenuOpen(false); }} className="text-lg font-medium hover:text-blue-400 transition duration-300 ease-in-out dark:text-gray-200 text-gray-700 cursor-pointer">Education</a>
                         <a href="#research-interests" onClick={(e) => { e.preventDefault(); scrollToSection('research-interests'); setIsMenuOpen(false); }} className="text-lg font-medium hover:text-blue-400 transition duration-300 ease-in-out dark:text-gray-200 text-gray-700 cursor-pointer">Research Interests</a>
+                        <a href="#experience" onClick={(e) => { e.preventDefault(); scrollToSection('experience'); setIsMenuOpen(false); }} className="text-lg font-medium hover:text-blue-400 transition duration-300 ease-in-out dark:text-gray-200 text-gray-700 cursor-pointer">Experience</a>
                         <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); setIsMenuOpen(false); }} className="text-lg font-medium hover:text-blue-400 transition duration-300 ease-in-out dark:text-gray-200 text-gray-700 cursor-pointer">Contact</a>
                     </nav>
                 </div>
