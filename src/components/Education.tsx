@@ -40,7 +40,7 @@ const Education: React.FC = () => {
                                 🎯 Thesis Focus
                             </h4>
                             <p className="text-sm dark:text-gray-300 text-gray-700">
-                                Predicting RNA 3D Structures from Sequence Using Machine Learning
+                            RNA structure prediction using deep learning
                             </p>
                         </div>
                         

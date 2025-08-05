@@ -8,11 +8,11 @@ const skillCategories = [
         skills: [
             {
                 category: 'Frameworks/Libraries',
-                items: ['TensorFlow', 'PyTorch', 'Keras', 'Scikit-learn', 'NumPy', 'Pandas']
+                items: ['PyTorch', 'TensorFlow','Keras', 'Scikit-learn', 'NumPy', 'Pandas', 'OpenCV']
             },
             {
                 category: 'Core Concepts',
-                items: ['Deep Learning (CNNs, RNNs, Transformers)', 'LLMs', 'Natural Language Processing (NLP)', 'Computer Vision']
+                items: ['Deep Learning (CNNs, RNNs, Transformers)', 'LLMs(Hugging Face)', 'Natural Language Processing (NLP)', 'Computer Vision', 'Medical Imaging']
             }
         ]
     },
@@ -23,7 +23,7 @@ const skillCategories = [
         skills: [
             {
                 category: 'Languages',
-                items: ['Python', 'JavaScript', 'TypeScript', 'Go', 'C/C++']
+                items: ['Python', 'C/C++','Go','JavaScript', 'TypeScript']
             },
             {
                 category: 'Backend',

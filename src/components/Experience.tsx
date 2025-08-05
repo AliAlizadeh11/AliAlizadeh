@@ -8,7 +8,7 @@ const experiences = [
     location: 'Tehran, Iran',
     date: 'Sept 2024 - Present',
     supervisor: 'Dr. Reza Entezari-Maleki',
-    paper: 'Predicting RNA 3D Structures from Sequence Using Machine Learning',
+    paper: 'RNA structure prediction using deep learning',
     details: [
       'Developed and implemented machine and deep learning models for RNA-related research',
       'Used frameworks: PyTorch, PyTorch Geometric, Keras, TensorFlow, Scikit-learn, Pandas',
