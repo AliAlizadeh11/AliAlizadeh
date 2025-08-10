@@ -3,7 +3,7 @@ import React from 'react';
 const honors = [
   {
     icon: '🏅',
-    title: 'Top 10% in Class GPA',
+    title: 'Top 25% in Class GPA',
     highlight: '17.37/20',
     subtitle: 'School of Computer Science, IUST',
     details: 'Class of 110 students',

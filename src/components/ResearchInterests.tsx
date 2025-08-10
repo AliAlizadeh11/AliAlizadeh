@@ -7,45 +7,45 @@ const ResearchInterests: React.FC = () => {
 
     const researchTopics = [
         {
-            id: "ai-ml",
-            icon: "🤖",
-            title: "Machine Learning for Biology",
-            description: "Applying ML algorithms to uncover patterns and insights from complex biological data.",
+            id: "machine-learning",
+            icon: "🧠",
+            title: "Machine Learning & Deep Learning",
+            description: "Developing and applying advanced ML algorithms to extract patterns, make predictions, and optimize decision-making",
             color: "gray"
         },
         {
-            id: "software-eng",
+            id: "computational-biology",
             icon: "🧬",
             title: "Computational Biology",
             description: "Developing software and models to simulate and understand biological systems.",
             color: "gray"
         },
         {
-            id: "cybersecurity",
+            id: "bioinformatics",
             icon: "🔬",
             title: "Bioinformatics",
             description: "Designing computational tools to manage, analyze, and interpret genomic and molecular data.",
             color: "gray"
         },
         {
-            id: "data-science",
-            icon: "💊",
-            title: "Drug Discovery",
-            description: "Leveraging data-driven methods to identify potential therapeutic compounds and predict drug interactions.",
+            id: "computer-vision",
+            icon: "🔢",
+            title: "Computer Vision",
+            description: "Designing algorithms to enable machines to perceive, interpret, and understand visual information from images and videos.",
             color: "gray"
         },
         {
-            id: "rna-protein",
-            icon: "🧪",
-            title: "RNA & Protein Structure Prediction",
-            description: "Exploring algorithms to model the 3D structure of RNA and proteins for functional analysis.",
+            id: "natural-language-processing",
+            icon: "📝",
+            title: "Natural Language Processing (NLP)",
+            description: "Building models to understand, generate, and translate human language for applications in information retrieval, conversation, and knowledge extraction.",
             color: "gray"
         },
         {
             id: "healthcare-ai",
             icon: "🏥",
-            title: "Deep Learning in Healthcare",
-            description: "Utilizing deep neural networks to improve diagnostics, treatment planning, and patient outcomes.",
+            title: "AI for Healthcare & Life Sciences",
+            description: "Applying AI to improve diagnostics, treatment planning, drug discovery, and biological understanding.",
             color: "gray"
         },
     ];
