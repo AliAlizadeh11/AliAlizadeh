@@ -68,45 +68,46 @@ const Projects: React.FC = () => {
         <section id="projects" className="card">
             <h2 className="text-3xl font-bold section-heading mb-8">Projects</h2>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="space-y-6">
                 {projects.map((project, idx) => (
                     <div
                         key={idx}
-                        className={`bg-gradient-to-br ${project.color} rounded-xl p-6 border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg transition-all duration-200 hover:scale-105 flex flex-col h-full`}
+                        className={`bg-gradient-to-br ${project.color} rounded-xl p-6 border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg transition-all duration-200 hover:scale-[1.02] flex flex-row items-center gap-6`}
                     >
-                        <div className="flex items-center mb-4">
-                            <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 mr-3">
-                                <span className="text-2xl">{project.icon}</span>
+                        <div className="flex-shrink-0 flex items-center justify-center w-16 h-16 rounded-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700">
+                            <span className="text-3xl">{project.icon}</span>
+                        </div>
+                        
+                        <div className="flex-1 min-w-0">
+                            <div className="mb-3">
+                                <h3 className="font-bold text-xl dark:text-white text-gray-800 mb-2">{project.title}</h3>
+                                <span className="text-xs text-gray-600 dark:text-gray-400 font-medium bg-gray-100 dark:bg-gray-800 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 inline-block">{project.category}</span>
                             </div>
-                            <div>
-                                <h3 className="font-bold text-lg dark:text-white text-gray-800">{project.title}</h3>
-                                <span className="text-sm text-gray-600 dark:text-gray-400 font-medium">{project.category}</span>
+                            
+                            <div className="dark:text-gray-300 text-gray-700 leading-relaxed mb-4 text-sm">
+                                {project.description.split('\n').map((line, i) => (
+                                    <p key={i} className="mb-1">{line}</p>
+                                ))}
+                            </div>
+                            
+                            <div className="flex flex-wrap gap-2 mb-4">
+                                {project.technologies.map((tech, i) => (
+                                    <span
+                                        key={i}
+                                        className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gradient-to-r from-gray-200 to-gray-100 dark:from-gray-800 dark:to-gray-700 text-gray-700 dark:text-gray-200 border border-gray-300 dark:border-gray-600"
+                                    >
+                                        {tech}
+                                    </span>
+                                ))}
                             </div>
                         </div>
                         
-                        <div className="dark:text-gray-300 text-gray-700 leading-relaxed mb-4 text-sm flex-1">
-                            {project.description.split('\n').map((line, i) => (
-                                <p key={i} className="mb-1">{line}</p>
-                            ))}
-                        </div>
-                        
-                        <div className="flex flex-wrap gap-2 mb-4">
-                            {project.technologies.map((tech, i) => (
-                                <span
-                                    key={i}
-                                    className="inline-block px-2 py-1 text-xs font-medium rounded-full bg-gradient-to-r from-gray-200 to-gray-100 dark:from-gray-800 dark:to-gray-700 text-gray-700 dark:text-gray-200 border border-gray-300 dark:border-gray-600"
-                                >
-                                    {tech}
-                                </span>
-                            ))}
-                        </div>
-                        
-                        <div className="mt-auto">
+                        <div className="flex-shrink-0">
                             <a
                                 href={project.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center px-4 py-2 text-sm font-medium rounded-lg bg-gradient-to-r from-gray-600 to-gray-700 dark:from-gray-700 dark:to-gray-800 text-white hover:from-gray-700 hover:to-gray-800 dark:hover:from-gray-800 dark:hover:to-gray-900 transition-all duration-200 hover:shadow-md w-full justify-center"
+                                className="inline-flex items-center px-6 py-3 text-sm font-medium rounded-lg bg-gradient-to-r from-gray-600 to-gray-700 dark:from-gray-700 dark:to-gray-800 text-white hover:from-gray-700 hover:to-gray-800 dark:hover:from-gray-800 dark:hover:to-gray-900 transition-all duration-200 hover:shadow-md whitespace-nowrap"
                             >
                                 {project.linkText}
                                 <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

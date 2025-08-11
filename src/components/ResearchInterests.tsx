@@ -42,10 +42,10 @@ const ResearchInterests: React.FC = () => {
             color: "gray"
         },
         {
-            id: "healthcare-ai",
-            icon: "🏥",
-            title: "AI for Healthcare & Life Sciences",
-            description: "Applying AI to improve diagnostics, treatment planning, drug discovery, and biological understanding.",
+            id: "llms-transformers",
+            icon: "🤖",
+            title: "LLMs",
+            description: "Researching and developing large language models, transformer architectures, and their applications in natural language understanding and generation.",
             color: "gray"
         },
     ];

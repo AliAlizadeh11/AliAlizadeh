@@ -82,7 +82,7 @@ const Education: React.FC = () => {
                                 </span>
                             </div>
                             <p className="text-base font-medium text-gray-600 dark:text-gray-200 mb-1">
-                                Shahid Bahonar University of Kerman(SBUK)
+                                Shahid Bahonar University of Kerman (SBUK)
                             </p>
                             <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
                                 2018 – 2021
