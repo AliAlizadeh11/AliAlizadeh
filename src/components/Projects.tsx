@@ -66,35 +66,35 @@ const projects = [
 const Projects: React.FC = () => {
     return (
         <section id="projects" className="card">
-            <h2 className="text-3xl font-bold section-heading mb-8">Projects</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold section-heading mb-6 sm:mb-8">Projects</h2>
             
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
                 {projects.map((project, idx) => (
                     <div
                         key={idx}
-                        className={`bg-gradient-to-br ${project.color} rounded-xl p-6 border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg transition-all duration-200 hover:scale-[1.02] flex flex-row items-center gap-6`}
+                        className={`bg-gradient-to-br ${project.color} rounded-xl p-4 sm:p-6 border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg transition-all duration-200 hover:scale-[1.02] flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6`}
                     >
-                        <div className="flex-shrink-0 flex items-center justify-center w-16 h-16 rounded-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700">
-                            <span className="text-3xl">{project.icon}</span>
+                        <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700">
+                            <span className="text-2xl sm:text-3xl">{project.icon}</span>
                         </div>
                         
                         <div className="flex-1 min-w-0">
                             <div className="mb-3">
-                                <h3 className="font-bold text-xl dark:text-white text-gray-800 mb-2">{project.title}</h3>
-                                <span className="text-xs text-gray-600 dark:text-gray-400 font-medium bg-gray-100 dark:bg-gray-800 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 inline-block">{project.category}</span>
+                                <h3 className="font-bold text-lg sm:text-xl lg:text-2xl dark:text-white text-gray-800 mb-2 leading-tight">{project.title}</h3>
+                                <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 font-medium bg-gray-100 dark:bg-gray-800 px-2 sm:px-3 py-1 sm:py-2 rounded-lg border border-gray-300 dark:border-gray-600 inline-block">{project.category}</span>
                             </div>
                             
-                            <div className="dark:text-gray-300 text-gray-700 leading-relaxed mb-4 text-sm">
+                            <div className="dark:text-gray-300 text-gray-700 leading-relaxed mb-3 sm:mb-4 text-xs sm:text-sm lg:text-base">
                                 {project.description.split('\n').map((line, i) => (
                                     <p key={i} className="mb-1">{line}</p>
                                 ))}
                             </div>
                             
-                            <div className="flex flex-wrap gap-2 mb-4">
+                            <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
                                 {project.technologies.map((tech, i) => (
                                     <span
                                         key={i}
-                                        className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gradient-to-r from-gray-200 to-gray-100 dark:from-gray-800 dark:to-gray-700 text-gray-700 dark:text-gray-200 border border-gray-300 dark:border-gray-600"
+                                        className="inline-block px-2 sm:px-3 py-1 text-xs font-medium rounded-full bg-gradient-to-r from-gray-200 to-gray-100 dark:from-gray-800 dark:to-gray-700 text-gray-700 dark:text-gray-200 border border-gray-300 dark:border-gray-600"
                                     >
                                         {tech}
                                     </span>
@@ -102,15 +102,15 @@ const Projects: React.FC = () => {
                             </div>
                         </div>
                         
-                        <div className="flex-shrink-0">
+                        <div className="flex-shrink-0 self-start sm:self-auto">
                             <a
                                 href={project.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center px-6 py-3 text-sm font-medium rounded-lg bg-gradient-to-r from-gray-600 to-gray-700 dark:from-gray-700 dark:to-gray-800 text-white hover:from-gray-700 hover:to-gray-800 dark:hover:from-gray-800 dark:hover:to-gray-900 transition-all duration-200 hover:shadow-md whitespace-nowrap"
+                                className="inline-flex items-center px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium rounded-lg bg-gradient-to-r from-gray-600 to-gray-700 dark:from-gray-700 dark:to-gray-800 text-white hover:from-gray-700 hover:to-gray-700 dark:hover:from-gray-800 dark:hover:to-gray-900 transition-all duration-200 hover:shadow-md whitespace-nowrap"
                             >
                                 {project.linkText}
-                                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg className="w-3 h-3 sm:w-4 sm:h-4 ml-1.5 sm:ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                                 </svg>
                             </a>
