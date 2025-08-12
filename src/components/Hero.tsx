@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
 
                 <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                     <a href={require('../assets/AliAlizadeh-CV.pdf')} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-6 py-3 border border-gray-500 dark:text-white text-gray-800 rounded-lg hover:bg-gray-700 dark:hover:bg-gray-700 hover:text-white dark:hover:text-white transition duration-300 ease-in-out text-center">
-                        Resume
+                        Download CV
                     </a>
                     <div className="flex space-x-4">
                         <a href="https://github.com/AliAlizadeh11" target="_blank" className="social-icon-button">
