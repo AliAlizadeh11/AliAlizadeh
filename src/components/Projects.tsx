@@ -2,6 +2,16 @@ import React from 'react';
 
 const projects = [
     {
+        icon: '📷',
+        title: 'FaceClass',
+        category: 'Computer Vision Course Project',
+        technologies: ['Python', 'Flask', 'YOLO', 'RetinaFace', 'ArcFace', 'MediaPipe'],
+        description: '• Designed and implemented a computer vision system for classroom analysis, including attendance tracking, emotion recognition, and attention scoring\n• Integrated multiple models (YOLO, RetinaFace, ArcFace, MediaPipe) for face detection, recognition, and behavioral analysis\n• Developed a Flask-based interactive dashboard with real-time video processing, spatial heatmaps, and comprehensive reporting',
+        link: 'https://github.com/AliAlizadeh11/FaceClass',
+        linkText: 'View Project',
+        color: 'from-gray-100 to-gray-50 dark:from-gray-800/50 dark:to-gray-700/50',
+    },
+    {
         icon: '🌐',
         title: 'NoCodi.ir',
         category: 'Software Engineering Course Project',
