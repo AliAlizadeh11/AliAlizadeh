@@ -3,7 +3,7 @@ import React from 'react';
 const Contact: React.FC = () => {
     return (
         <section id="contact" className="card">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold section-heading">Contact</h2>
+            <h2 className="text-3xl font-bold section-heading mb-8">Contact</h2>
             <p className="dark:text-gray-300 text-gray-700 leading-relaxed mb-4 text-sm sm:text-base lg:text-lg">
                 Feel free to reach out to me! I'm always open to discussing new opportunities, collaborations, or just connecting.
             </p>

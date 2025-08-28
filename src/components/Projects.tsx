@@ -76,7 +76,7 @@ const projects = [
 const Projects: React.FC = () => {
     return (
         <section id="projects" className="card">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold section-heading mb-6 sm:mb-8">Projects</h2>
+            <h2 className="text-3xl font-bold section-heading mb-8">Projects</h2>
             
             <div className="space-y-4 sm:space-y-6">
                 {projects.map((project, idx) => (
@@ -85,16 +85,16 @@ const Projects: React.FC = () => {
                         className={`bg-gradient-to-br ${project.color} rounded-xl p-4 sm:p-6 border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg transition-all duration-200 hover:scale-[1.02] flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6`}
                     >
                         <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700">
-                            <span className="text-2xl sm:text-3xl">{project.icon}</span>
+                            <span className="text-3xl">{project.icon}</span>
                         </div>
                         
                         <div className="flex-1 min-w-0">
                             <div className="mb-3">
-                                <h3 className="font-bold text-lg sm:text-xl lg:text-2xl dark:text-white text-gray-800 mb-2 leading-tight">{project.title}</h3>
-                                <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 font-medium bg-gray-100 dark:bg-gray-800 px-2 sm:px-3 py-1 sm:py-2 rounded-lg border border-gray-300 dark:border-gray-600 inline-block">{project.category}</span>
+                                <h3 className="font-bold text-lg dark:text-white text-gray-800 mb-2 leading-tight">{project.title}</h3>
+                                <span className="text-sm text-gray-600 dark:text-gray-400 font-medium bg-gray-100 dark:bg-gray-800 px-2 sm:px-3 py-1 sm:py-2 rounded-lg border border-gray-300 dark:border-gray-600 inline-block">{project.category}</span>
                             </div>
                             
-                            <div className="dark:text-gray-300 text-gray-700 leading-relaxed mb-3 sm:mb-4 text-xs sm:text-sm lg:text-base">
+                            <div className="dark:text-gray-300 text-gray-700 leading-relaxed mb-3 sm:mb-4 text-base">
                                 {project.description.split('\n').map((line, i) => (
                                     <p key={i} className="mb-1">{line}</p>
                                 ))}
