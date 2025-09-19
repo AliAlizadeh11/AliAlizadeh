@@ -19,10 +19,22 @@ const Navbar: React.FC = () => {
         }
     };
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+
     return (
         <header className="fixed top-0 left-0 right-0 z-50 w-full bg-white dark:bg-black shadow-md backdrop-blur-sm bg-opacity-90 dark:bg-opacity-90">
             <div className="w-full max-w-6xl mx-auto flex justify-between items-center py-4 px-4 sm:px-6 lg:px-8">
-                <div className="text-xl sm:text-2xl font-bold dark:text-white text-gray-800">Ali Alizadeh Profile</div>
+                <button 
+                    onClick={scrollToTop}
+                    className="text-xl sm:text-2xl font-bold dark:text-white text-gray-800 hover:text-blue-400 transition duration-300 ease-in-out cursor-pointer"
+                >
+                    Ali Alizadeh Profile
+                </button>
                 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex space-x-6">
